@@ -126,3 +126,77 @@ svg {
 .main {
   overflow: hidden;
 }
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  width: 100%;
+  background-color: var(--container-color);
+}
+
+.main-nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__logo {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.main-nav__logo span {
+  color: var(--first-color);
+}
+
+.main-nav__close,
+.main-nav__toggle {
+  display: flex;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100%;
+    padding: 4.5rem 0 0 3rem;
+    background-color: hsla(0, 0%, 10%, 0.3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    transition: right 0.4s;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.main-nav__link {
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  transition: color 0.4s;
+}
+
+.main-nav__link:hover {
+  color: var(--first-color);
+}
+
+.main-nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.open-menu {
+  right: 0;
+}
