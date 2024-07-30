@@ -328,3 +328,75 @@ svg {
 .about__blob path {
   stroke: var(--first-color);
 }
+
+.skills {
+  background-color: var(--container-color);
+}
+
+.skills__container {
+  row-gap: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+.skills__data {
+  text-align: center;
+}
+
+.skills__description {
+  margin-bottom: 2rem;
+}
+
+.skills__content,
+.skills__group {
+  display: grid;
+}
+
+.skills__content {
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 4rem;
+}
+
+.skills__group {
+  row-gap: 1rem;
+}
+
+.skills__item {
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.skills__item::marker {
+  color: var(--first-color);
+}
+
+.services__container {
+  row-gap: 2rem;
+  padding-block: 1rem;
+}
+
+.card {
+  padding: 3rem 1.25rem;
+  border: 2px solid var(--container-color);
+  border-radius: 1rem;
+  text-align: center;
+  background-color: var(--container-color);
+  transition: border 0.4s;
+}
+
+.card__icon {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 4rem;
+  color: var(--first-color);
+}
+
+.card__title {
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-h2);
+}
+
+.card:hover {
+  border: 2px solid var(--first-color);
+}
