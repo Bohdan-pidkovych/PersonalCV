@@ -26,3 +26,12 @@ const blurHeader = () => {
   this.scrollY >= 50 ? header.classList.add('blur-header') : header.classList.remove('blur-header');
 }
 window.addEventListener('scroll', blurHeader);
+
+const contactForm = document.querySelector('.contact__form');
+const contactMessage = document.querySelector('.contact__message');
+
+const sendEmail = (evt) => {
+  evt.preventDefault();
+}
+
+contactForm.addEventListener('submit', sendEmail);

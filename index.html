@@ -248,8 +248,24 @@
         </article>
       </div>
     </section>
+    <section class="contact page-section" id="contact">
+      <h3 class="contact__subtitle section__subtitle">Get In <span>Touch</span></h3>
+      <h2 class="contact__title section__title">Contact Me</h2>
+      <div class="contact__container container grid">
+        <form class="contact__form" action="#">
+          <div class="contact__group">
+            <input class="contact__input" type="text" name="user-name" placeholder="Enter your name" required>
+            <input class="contact__input" type="email" name="user-email" placeholder="Enter your email" required>
+          </div>
+          <textarea class="contact__input" name="user-message" placeholder="Enter your message" required></textarea>
+          <p class="contact__message"></p>
+          <button class="contact__button button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="page-footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
