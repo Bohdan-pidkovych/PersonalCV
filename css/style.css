@@ -513,3 +513,67 @@ svg {
   font-size: var(--font-size-small);
   color: var(--title-color);
 }
+
+.page-footer {
+  padding-block: 3.5rem 2rem;
+  background-color: var(--container-color);
+}
+
+.page-footer__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.page-footer__title {
+  margin-bottom: 0.25rem;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-semi-bold);
+}
+
+.page-footer__title span {
+  color: var(--first-color);
+}
+
+.page-footer__education {
+  font-size: var(--font-size-normal);
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.page-footer__social-link {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  background-color: var(--first-color-alt);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: transform 0.4s;
+}
+
+.page-footer__social-link:hover {
+  transform: translateY(-0.25rem);
+}
+
+.page-footer__copyright {
+  margin-top: 2rem;
+  font-size: var(--font-size-smaller);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(228, 12%, 25%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(228, 8%, 35%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(228, 8%, 45%);
+}
