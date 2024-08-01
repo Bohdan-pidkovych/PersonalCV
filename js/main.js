@@ -45,3 +45,10 @@ const sendEmail = (evt) => {
 }
 
 contactForm.addEventListener('submit', sendEmail);
+
+const scrollUp = () => {
+  const scrollUp = document.querySelector('.scroll-up');
+  this.scrollY >= 350 ? scrollUp.classList.add('scroll-show') : scrollUp.classList.remove('scroll-show');
+}
+
+window.addEventListener('scroll', scrollUp);
