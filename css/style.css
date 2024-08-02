@@ -219,6 +219,10 @@ svg {
   -webkit-backdrop-filter: blur(24px);
 }
 
+.active-link {
+  color: var(--first-color);
+}
+
 .home {
   background-color: var(--container-color);
 }
@@ -599,4 +603,56 @@ svg {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(228, 8%, 45%);
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .skills__content {
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+
+  .services__card {
+    padding-block: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .home__container,
+  .about__container,
+  .skills__container,
+  .services__container,
+  .projects__container,
+  .contact__container {
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav__menu {
+    width: 55%;
+  }
+
+  .home__container,
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__data,
+  .about__data {
+    text-align: initial;
+  }
+
+  .home__social {
+    justify-content: initial;
+  }
+
+  .home__blob {
+    width: 400px;
+  }
 }
