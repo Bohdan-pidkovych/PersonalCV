@@ -638,13 +638,16 @@ svg {
   }
 
   .home__container,
-  .about__container {
+  .about__container,
+  .skills__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
   .home__data,
-  .about__data {
+  .about__data,
+  .skills__data,
+  :is(.about__data, .skills__data) :is(.section__subtitle, .section__title) {
     text-align: initial;
   }
 
@@ -652,7 +655,49 @@ svg {
     justify-content: initial;
   }
 
-  .home__blob {
+  .home__blob,
+  .about__blob {
     width: 400px;
+  }
+
+  .about__data {
+    order: 1;
+  }
+
+  .services__container,
+  .projects__container {
+    grid-template-columns: repeat(2, 352px);
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .page-section {
+    padding-block: 7rem 2rem;
+  }
+
+  .section__subtitle {
+    font-size: var(--font-size-normal);
+  }
+
+  .page-header__nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .main-nav__close,
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .main-nav__menu {
+    width: initial;
+  }
+
+  .blur-header::after {
+    backdrop-filter: blur(25px);
   }
 }
