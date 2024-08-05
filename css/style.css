@@ -699,5 +699,70 @@ svg {
 
   .blur-header::after {
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .home__container {
+    grid-template-columns: 455px 550px;
+    column-gap: 7rem;
+    padding-block: 2rem 3rem;
+  }
+
+  .home__blob {
+    width: 550px;
+  }
+
+  .home__content {
+    row-gap: 4.5rem;
+  }
+
+  .home__description {
+    margin-block: 1.5rem 2.5rem;
+  }
+
+  .home__social {
+    column-gap: 1.5rem;
+  }
+
+  .about__container {
+    grid-template-columns: 550px 460px;
+    column-gap: 4.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .about__blob {
+    width: 550px;
+  }
+
+  .about__description {
+    margin-bottom: 3rem;
+  }
+
+  .skills__container {
+    grid-template-columns: 340px 425px;
+    column-gap: 10rem;
+    padding-bottom: 4rem;
+  }
+
+  .skills__description {
+    margin-bottom: 3rem;
+  }
+
+  .skills__content {
+    column-gap: 8rem;
+  }
+
+  .skills__group {
+    row-gap: 1.5rem;
+  }
+
+  .skills__item {
+    font-size: var(--font-size-h3);
   }
 }
